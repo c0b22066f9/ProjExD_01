@@ -5,19 +5,12 @@ def main():
     pg.display.set_caption("はばたけ！こうかとん")
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     screen = pg.display.set_mode((800, 600))
-    #bg_img_rct= bg_img.get_rect()
-    #bg_img_rct.center = 400,300
-    
-    
-    #img = pg.image.load("ex01/fig/3.png")
-
-
     
     clock  = pg.time.Clock()
     
     kk_img = pg.image.load("ex01/fig/3.png")
     kk_img = pg.transform.flip(kk_img, True, False)
-    kk_imgs = [kk_img, pg.transform.rotozoom(kk_img, 142, 1.0)]
+    kk_imgs = [kk_img, pg.transform.rotozoom(kk_img, 10, 1.0)]
     
     tmr = 0
     while True:
